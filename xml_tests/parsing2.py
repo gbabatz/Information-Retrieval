@@ -1,4 +1,4 @@
-xmlstr = open('topics.xml').read()
+xmlstr = open('../topics_all.xml').read()
 
 xmlsplited = xmlstr.split(' ')
 
@@ -12,7 +12,7 @@ for subxml in xmlsplited:
 
         xmlsplited2.append(element)
 
-print(xmlsplited2)
+# print(xmlsplited2)
 
 def make_end_tag(tag):
     endtag = [char for char in tag]
@@ -56,14 +56,14 @@ for index, elem in enumerate(xmlsplited2):
         result.append(elem)
 
 
-print(result)
+# print(result)
 
 
 newstr = ' '.join(result)
 
-#print(newstr)
+# print(newstr)
 
-with open('topics_reformated.xml','w') as filenew:
+with open('../topics_all_reformated.xml','w') as filenew:
     filenew.write(newstr)
 
 
@@ -86,9 +86,9 @@ def indent(elem, level=0):
 
 import xml.etree.ElementTree as et
 
-tree = et.parse('topics_reformated.xml')
+tree = et.parse('../topics_all_reformated.xml')
 root = tree.getroot()
 
 indent(root)
 newtree = et.ElementTree(root)
-newtree.write('topics_reformated_readable.xml')
+newtree.write('../topics_all_reformated_readable.xml')
