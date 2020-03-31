@@ -40,14 +40,14 @@ et.SubElement(root, 'trecFormat').text = 'true'
 # loop from here
 # parse the topics
 
-# import nltk
-# nltk.download()
+import nltk
+nltk.download()
 from nltk.corpus import wordnet
 
 # for ease it would be best to parse the text from the text tag of each of the
 # previously made query documents, for the instanse of title+desc , title+desc+narr
 # just change the file parsed
-topics_tree = et.parse('topics_reformated_readable.xml')
+topics_tree = et.parse('../topics_all_reformated_readable.xml')
 topics_root = topics_tree.getroot()
 
 number = 301
@@ -105,5 +105,5 @@ for title in topics_root.iter('title'):
 
 indent(root)
 tree = et.ElementTree(root)
-tree.write('queries_titles_enhanced.xml')
+tree.write('../queries_titles_enhanced.xml')
 
