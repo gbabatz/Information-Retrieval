@@ -51,57 +51,66 @@
 
 
 
-xmlstr = open('test.xml').read()
-
-print(xmlstr)
-
-# xmllist = (list(xmlstr))
-
-xmlsplited = xmlstr.split(' ')
-
-print(xmlsplited)
-
-# xmlsplited.insert(33, '</title>\n')
+# xmlstr = open('test.xml').read()
+#
+# print(xmlstr)
+#
+# # xmllist = (list(xmlstr))
+#
+# xmlsplited = xmlstr.split(' ')
 #
 # print(xmlsplited)
 #
-# newstr = ' '.join(xmlsplited)
+# # xmlsplited.insert(33, '</title>\n')
+# #
+# # print(xmlsplited)
+# #
+# # newstr = ' '.join(xmlsplited)
+# #
+# # print(newstr)
+# #
+# # with open('newfile.xml','w') as filenew:
+# #     filenew.write(newstr)
 #
-# print(newstr)
+# def make_end_tag(tag):
+#     endtag = [char for char in tag]
+#     endtag.insert(1, '/')
+#     endtag = ''.join(endtag)
+#     return endtag
+#
+# result = []
+# temptag = ''
+# for index, elem in enumerate(xmlsplited):
+#
+#     if '<title>' in elem:
+#         result.append(elem)
+#         temptag = make_end_tag(elem)
+#     elif '<desc>' in elem:
+#         result.append(temptag)
+#         result.append(elem)
+#         temptag = make_end_tag(elem)
+#     elif '</top>' in elem:
+#         result.append(temptag)
+#         result.append(elem)
+#     else:
+#         result.append(elem)
+#
+#
+# # print(result)
+#
+#
+# newstr = ' '.join(result)
+#
+# # print(newstr)
 #
 # with open('newfile.xml','w') as filenew:
 #     filenew.write(newstr)
 
-def make_end_tag(tag):
-    endtag = [char for char in tag]
-    endtag.insert(1, '/')
-    endtag = ''.join(endtag)
-    return endtag
+phrase = "R&D"
+print("&" in phrase)
 
-result = []
-temptag = ''
-for index, elem in enumerate(xmlsplited):
+phrase = phrase.replace("&", "no")
 
-    if '<title>' in elem:
-        result.append(elem)
-        temptag = make_end_tag(elem)
-    elif '<desc>' in elem:
-        result.append(temptag)
-        result.append(elem)
-        temptag = make_end_tag(elem)
-    elif '</top>' in elem:
-        result.append(temptag)
-        result.append(elem)
-    else:
-        result.append(elem)
+print(phrase)
 
-
-print(result)
-
-
-newstr = ' '.join(result)
-
-print(newstr)
-
-with open('newfile.xml','w') as filenew:
-    filenew.write(newstr)
+print(phrase[1:])

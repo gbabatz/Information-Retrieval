@@ -14,13 +14,13 @@ for subxml in xmlsplited:
 
 # print(xmlsplited2)
 
+
 def make_end_tag(tag):
-    endtag = [char for char in tag]
-    endtag.insert(1, '/')
-    endtag = ''.join(endtag)
+    endtag = tag[0] + '/' + tag[1:]
     return endtag
 
 result = []
+
 temptag = ''
 for index, elem in enumerate(xmlsplited2):
 
@@ -63,7 +63,7 @@ newstr = ' '.join(result)
 
 # print(newstr)
 
-with open('../topics_all_reformated.xml','w') as filenew:
+with open('../topics_all_reformated.xml', 'w') as filenew:
     filenew.write(newstr)
 
 
