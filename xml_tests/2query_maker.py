@@ -30,7 +30,7 @@ et.SubElement(root, 'trecFormat').text = 'true'
 # loop from here
 # parse the topics
 
-topics_tree = et.parse('topics_reformated_readable.xml')
+topics_tree = et.parse('../topics_all_reformated_readable.xml')
 topics_root = topics_tree.getroot()
 
 number = 301
@@ -54,4 +54,4 @@ for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc')
 
 indent(root)
 tree = et.ElementTree(root)
-tree.write('titles_desc_narr_tree.xml')
+tree.write('../queries_titles_desc_narr_tree.xml')
