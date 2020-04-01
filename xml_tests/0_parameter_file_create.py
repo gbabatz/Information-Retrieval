@@ -27,7 +27,7 @@ relative_bath = ['dtds','fbis','fr94','ft', 'latimes']
 corpus = et.SubElement(root, 'corpus')
 
 for path in relative_bath:
-    et.SubElement(corpus, 'path').text = abs_path + path
+    et.SubElement(corpus, 'path').text = abs_path + '/' + path
     et.SubElement(corpus, 'class').text = 'trectext'
 
 
