@@ -20,8 +20,8 @@ def indent(elem, level=0):
 root = et.Element('paremeters')
 
 index_location = ' '
-abs_path = ' '
-relative_bath = [' ',' ',' ','']
+abs_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1'
+relative_bath = ['dtds','fbis','fr94','ft', 'latimes']
 
 
 corpus = et.SubElement(root, 'corpus')
