@@ -23,10 +23,8 @@ index_location = '/indices/index1'
 abs_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1'
 relative_bath = ['/fbis','/fr94','/ft', '/latimes']
 
-
-corpus = et.SubElement(root, 'corpus')
-
 for path in relative_bath:
+    corpus = et.SubElement(root, 'corpus')
     et.SubElement(corpus, 'path').text = abs_path + path
     et.SubElement(corpus, 'class').text = 'trectext'
 
@@ -40,7 +38,7 @@ et.SubElement(stemmer, 'name').text = 'Krovetz'
 
 indent(root)
 tree = et.ElementTree(root)
-tree.write('parameter_file.parameter')
+tree.write('../parameter_file.parameter')
 
 #print('done')
 
