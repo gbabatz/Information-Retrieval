@@ -21,7 +21,7 @@ root = et.Element('paremeters')
 
 index_location = '/indices/index1'
 abs_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1'
-relative_bath = ['/dtds','/fbis','/fr94','/ft', '/latimes']
+relative_bath = ['/fbis','/fr94','/ft', '/latimes']
 
 
 corpus = et.SubElement(root, 'corpus')
