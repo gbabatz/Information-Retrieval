@@ -1,4 +1,11 @@
 import xml.etree.ElementTree as et
+import string
+
+
+def remove_punctuation(str_in, punctuation_list):
+    char_list_without_punct = [char for char in str_in if char not in punctuation_list]
+    text_without_punct = ''.join(char_list_without_punct)
+    return text_without_punct
 
 index_path = '/home/gbabatz/workspace/Information_retrieval/project1/IR-2019-2020-Project-1/indices/index1'
 basic_structure = '<parameters>\n' \
@@ -18,7 +25,8 @@ while mode_option < 0 or mode_option > 2:
     mode_option = int(input("Enter value: 0,1 or 2 "))
 
 number = 301
-queries = basic_structure
+result = basic_structure
+punct_list = set(string.punctuation)
 for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc'), topics_root.iter('narr')):
 
     # got to take the 'Description: ' off the text
@@ -28,17 +36,17 @@ for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc')
     narr.text = narr.text[12:]
 
     if mode_option == 0:
-        text = title.text
+        text = remove_punctuation(title.text,punct_list)
     elif mode_option == 1:
-        text = title.text + desc.text
+        text = remove_punctuation(title.text + desc.text, punct_list)
     elif mode_option == 2:
-        text = title.text + desc.text + narr.text
+        text = remove_punctuation(title.text + desc.text + narr.text, punct_list)
 
     query_structure = '  <query> <type>indri</type><number>' + str(number) + '</number><text> ' + text + ' </text></query>\n'
     number += 1
-    queries = queries + query_structure
+    result = result + query_structure
 
-queries = queries + '</parameters>'
+result = result + '</parameters>'
 
 # yes it processes all even though some data may not need to be processed
 # for example when I need only titles however the application is low cost
@@ -46,4 +54,4 @@ queries = queries + '</parameters>'
 
 file_title = '../basic_queries_' + modes[mode_option] + '_approach2.xml'
 with open(file_title, 'w') as f:
-    f.write(queries)
+    f.write(result)

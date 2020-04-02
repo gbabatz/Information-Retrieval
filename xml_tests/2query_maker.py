@@ -1,5 +1,5 @@
 import xml.etree.ElementTree as et
-
+import string
 
 def indent(elem, level=0):
     i = "\n" + level * "  "
@@ -15,6 +15,12 @@ def indent(elem, level=0):
     else:
         if level and (not elem.tail or not elem.tail.strip()):
             elem.tail = i
+
+
+def remove_punctuation(str_in, punctuation_list):
+    char_list_without_punct = [char for char in str_in if char not in punctuation_list]
+    text_without_punct = ''.join(char_list_without_punct)
+    return text_without_punct
 
 
 # creating the xml format
@@ -37,6 +43,7 @@ while mode_option < 0 or mode_option > 2:
     mode_option = int(input("Enter value: 0,1 or 2 "))
 
 number = 301
+punct_list = set(string.punctuation)
 for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc'), topics_root.iter('narr')):
 
     query = et.SubElement(root, 'query')
@@ -51,11 +58,14 @@ for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc')
     narr.text = narr.text[12:]
 
     if mode_option == 0:
-        et.SubElement(query, 'text').text = title.text
+        query_txt = remove_punctuation(title.text,punct_list)
+        et.SubElement(query, 'text').text = query_txt
     elif mode_option == 1:
-        et.SubElement(query, 'text').text = title.text + desc.text
+        query_txt = remove_punctuation(title.text + desc.text, punct_list)
+        et.SubElement(query, 'text').text = query_txt
     elif mode_option == 2:
-        et.SubElement(query, 'text').text = title.text + desc.text + narr.text
+        query_txt = remove_punctuation(title.text + desc.text + narr.text, punct_list)
+        et.SubElement(query, 'text').text = query_txt
 
 # yes it processes all even though some data may not need to be processed
 # for example when I need only titles however the application is low cost
