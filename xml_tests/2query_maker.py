@@ -25,7 +25,7 @@ def remove_punctuation(str_in, punctuation_list):
 
 # creating the xml format
 root = et.Element('parameters')
-et.SubElement(root, 'index').text = '/home/gbabatz/workspace/Information_retrieval/project1/IR-2019-2020-Project-1/indices/index1'
+et.SubElement(root, 'index').text = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1c'
 et.SubElement(root, 'rule').text = 'method:dirichlet,mu:1000'
 et.SubElement(root, 'count').text = '1000'
 et.SubElement(root, 'trecFormat').text = 'true'

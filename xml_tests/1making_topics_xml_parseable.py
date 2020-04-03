@@ -1,4 +1,4 @@
-topics_str = open('../topics_all.xml').read()
+topics_str = open('../topics.301-450.trec').read()
 
 
 # takes as input a string parameter and returns a list

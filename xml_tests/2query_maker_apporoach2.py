@@ -7,7 +7,7 @@ def remove_punctuation(str_in, punctuation_list):
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
 
-index_path = '/home/gbabatz/workspace/Information_retrieval/project1/IR-2019-2020-Project-1/indices/index1'
+index_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1'
 basic_structure = '<parameters>\n' \
                   '<index>' + index_path + '</index>\n' \
                   '<rule>method:dirichlet,mu:1000</rule>\n' \
