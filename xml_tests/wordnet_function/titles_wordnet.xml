@@ -1,0 +1,756 @@
+<parameters>
+  <index>/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1</index>
+  <rule>method:dirichlet,mu:1000</rule>
+  <count>1000</count>
+  <trecFormat>true</trecFormat>
+  <query>
+    <type>indri</type>
+    <number>301</number>
+    <text> offense organise lawbreaking international organize criminal offence organized crime machinate</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>302</number>
+    <text> anterior polio poliomyelitis infantile and postpolio acute paralysis</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>303</number>
+    <text> hubble achievement achievements powell edwin telescope accomplishment</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>304</number>
+    <text> jeopardize coinage mammals endanger jeopardise specie metal threaten money imperil mintage mammalian mammal species endangered</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>305</number>
+    <text> lifethreatening fomite highest grievous degree the most to dangerous wellnigh vehicles nearly vehicle almost</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>306</number>
+    <text> demise african decease deaths death last civilian dying</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>307</number>
+    <text> protrude project visualize jut newly freshly unexampled newfangled undertaking externalize envision stick hydroelectric contrive projects new task out externalise</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>308</number>
+    <text> medicine embed imbed dentistry odontology implant dental</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>309</number>
+    <text> criminal lawbreaking offense pat knap crime whang rap music offence tap and</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>310</number>
+    <text> waves wafture mental undulation wave genus brainiac crab genius ability waving receiving learning cancer disease capacity malignant radiocommunication mind beckon radio moving set psyche ridge wireless receiver the brain brainpower and neoplastic encephalon</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>311</number>
+    <text> espionage industrial</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>312</number>
+    <text> tank farming hydroponics aquiculture</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>313</number>
+    <text> charismatic magnetic levitationmaglev</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>314</number>
+    <text> nautical shipboard vegetation marine maritime devil flora soldier botany dog leatherneck</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>315</number>
+    <text> road accident event main highway fortuity chance unexplained accidents</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>316</number>
+    <text> polygamy polygyny polyandry</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>317</number>
+    <text> telefax fax unasked unsolicited machine faxes facsimile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>318</number>
+    <text> area unspoiled res politic in retirement substantially undecomposed body skillful salutary herbert state publica h retreat c effect country beneficial force rural advantageously nation charles considerably unspoilt skilful proficient best</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>319</number>
+    <text> germ informant newly freshly unexampled newfangled origin sources fuel source new</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>320</number>
+    <text> vulcanized roughage overseas oculus visual telegram cablegram fibre cables length eye television line system opthalmic fiber cable service undersea optic transmission</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>321</number>
+    <text> in inch female women number state 49 parliaments indium atomic woman adult fair lady sex fantan cleaning hoosier inwards charwoman indiana sevens parliament</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>322</number>
+    <text> art crime lawbreaking offence matter artwork creation artistic fine graphics prowess offense international production criminal artistry nontextual</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>323</number>
+    <text> plagiarization literaryjournalistic plagiarisation plagiarism</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>324</number>
+    <text> argentinebritish knowledge coitus telling act back sex congress coition carnal relation intercourse sexual copulation recounting relations</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>325</number>
+    <text> lifestyle life lifestyle furor fad religious cult craze lifestyles cultus style furore</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>326</number>
+    <text> slide sinking under drop feeling down ferryboat ferrying go ferry sinkings</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>327</number>
+    <text> forwardlooking thrall bodoni bondage innovative modernistic thralldom thraldom slaveholding modern font slavery</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>328</number>
+    <text> rome of blessedness catholic holy beatifications pope pontiff vicar roman bishop beatification beatitude christ father alexander</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>329</number>
+    <text> zephyr publicize travel befoulment pollution line aerate phrase mexican ventilate melodic out gentle tune breeze air wind defilement airwave melody</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>330</number>
+    <text> cooperation iraniraq</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>331</number>
+    <text> judgment human public global humankind box race cosmos beings mankind coin criticism populace money rely world worldly building depository concern company banking macrocosm reality humans literary bank financial earth worldwide unfavorable globe universe institution earthly</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>332</number>
+    <text> taxation equivocation dodging enhancement evasion tax revenue income</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>333</number>
+    <text> bacteria drug antibiotics antibiotic bacterium disease</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>334</number>
+    <text> ascendence cryptology in ascendancy insure export mastery exportation cryptography line control it controls see to cryptanalytics steganography cryptanalysis keep condition ascendance ascendency coding</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>335</number>
+    <text> parent parents biologic adoptive biological</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>336</number>
+    <text> lightlessness of assail in darkness on oven inglorious endure bun plan blackness tonebeginning joseph out total pitchdark shameful aggress temple have bear birth shirley ignominious pitch approach black the tolerate give blacken inkiness nigrify deport calamitous pitchblack blackmarket bleak lash set a attacks attack onrush disastrous</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>337</number>
+    <text> viral hepatitis</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>338</number>
+    <text> endangerment of the acetylsalicylic peril on aspirin infection chances hazard put bayer lay take acid line run empirin jeopardy exposure chance risk a</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>339</number>
+    <text> alzheimers drugs drug discussion do treatment alzheimers disease</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>340</number>
+    <text> mine proscription in of land ostracise edwin ban kingdom acres body ashore demesne herbert cast state publica arts nursing firma banish res ostracize terra solid dry bachelor politic ground country nation out banning set forbidding landed realm estate din forbiddance</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>341</number>
+    <text> airdrome department airport aerodrome measures measure certificate security drome</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>342</number>
+    <text> forcing diplomatical diplomatic expulsion ejection out</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>343</number>
+    <text> dying decease deaths death constabulary demise last police force</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>344</number>
+    <text> contumely netmail illusage mistreat illtreatment maltreat email illtreat abuse email misuse maltreatment abuses illuse insult of mail revilement electronic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>345</number>
+    <text> plant sales overseas abroad cutrate tobacco oversea baccy sale gross agreement event revenue</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>346</number>
+    <text> standards criterion educational banner touchstone standard monetary</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>347</number>
+    <text> extinction extermination wildlife experimental quenching defunctness extinguishing</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>348</number>
+    <text> agoraphobia</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>349</number>
+    <text> metabolism metamorphosis process metabolic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>350</number>
+    <text> computing wellness machine health calculator processor terminals computer device processing terminal data estimator reckoner system end electronic depot information and figurer</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>351</number>
+    <text> geographic fossil falkland oil crude rock expedition exploration petroleum</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>352</number>
+    <text> impingement wallop impact chunnel brits british people bear channel upon tunnel</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>353</number>
+    <text> geographic expedition antarctic continent exploration antarctica</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>354</number>
+    <text> endangerment of journalist the peril diary diarist risk chances hazard put lay take line run risks exposure chance infection a on keeper jeopardy</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>355</number>
+    <text> sensing ocean control detection remote</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>356</number>
+    <text> northern estrogen ireland of uk britain kingdom great postmenopausal oestrogen and united uk</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>357</number>
+    <text> supply dispute of ethel argufy h2o water difference fluid body irrigate reserve amniotic pee amnionic territorial weewee waters altercate urine contravention piddle opinion gainsay piss</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>358</number>
+    <text> human death fatality bloodalcohol fatalities</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>359</number>
+    <text> firm predictor company fund prognosticator predictors trust investment forecaster soothsayer mutual monetary</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>360</number>
+    <text> good benefit drugs drug legalisation benefits do legitimation legalization</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>361</number>
+    <text> habiliment tog of enclothe clothing article wearable sweatshops clothe sweatshop</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>362</number>
+    <text> smuggling human smuggle being</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>363</number>
+    <text> disasters of transfer expatriation disaster burrow system transportation tragedy deportation catastrophe department calamity shipping tunnel transferral</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>364</number>
+    <text> rabies lyssa</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>365</number>
+    <text> nino alt el railroad railway overhead elevated</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>366</number>
+    <text> services of the utilise habituate use commercialgrade usa expend goods nitrile states message united manipulation cyanide uses utilisation usa consumption utilize america us utilization commercial apply nitril and usage economic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>367</number>
+    <text> piracy plagiarization plagiarisation buccaneering</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>368</number>
+    <text> fecundation vitro number fertilisation inch in atomic state 49 hoosier inwards indium indiana fertilization</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>369</number>
+    <text> bulimia bingeeating anorexia syndrome nervosa</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>370</number>
+    <text> philosophy pentateuch of torah constabulary nature force practice fooddrug police jurisprudence natural law laws legal</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>371</number>
+    <text> insurance holistic health indemnity policy wellness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>372</number>
+    <text> english cassino casino native language american gambling</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>373</number>
+    <text> encoding export encryption exportation equipment</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>374</number>
+    <text> trophy loot winners prize booty alfred pillage bernhard dirty nobel money prise plunder winner</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>375</number>
+    <text> energy of vim 1 atomic number getupandgo doe department free h vigour hydrogen vigor</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>376</number>
+    <text> woo human of public global humankind inn race cosmos beings mankind populace tribunal world worldly court courtroom concern lawcourt lodge hotel macrocosm reality humans royal judicature tourist motor justice earth worldwide courtyard globe universe law earthly margaret homage</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>377</number>
+    <text> cigar smoking</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>378</number>
+    <text> resistance opposition foe oppositeness opponent euro foeman</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>379</number>
+    <text> mainstreaming</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>380</number>
+    <text> fleshiness obesity check examination exam corpulency treatment aesculapian health discussion medical checkup</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>381</number>
+    <text> choice of medicinal medicine medication specialty medical alternative drug medicament practice</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>382</number>
+    <text> number automobiles atomic auto motorcar fuel h 1 car hydrogen automobile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>383</number>
+    <text> sickness drugs drug mental do unwellness illness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>384</number>
+    <text> month lunation outer post blank around synodic space sun station moon lunar myung moonshine on infinite moonlight</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>385</number>
+    <text> intercrossed railcar cars railroad loanblend loanblend auto elevator hybrid fuel motorcar crossbreed cable railway car automobile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>386</number>
+    <text> didactics kid youngster instruct children teaching activity disable tiddler education minor educational disenable disabled child handicapped incapacitate nipper</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>387</number>
+    <text> languish radioactive to thriftlessness barren wasteland in lay knock matter godforsaken permissive off pine away waste squander neutralise liquidate devastate product material emaciate do wastefulness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>388</number>
+    <text> fertiliser dirt organic soil grime territory bemire begrime dirty enhancement colly fertilizer grunge constitutive</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>389</number>
+    <text> reassign science transfer applied engineering illegal carryover training technology of transferral</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>390</number>
+    <text> orphan do drugs drug</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>391</number>
+    <text> drugs rd drug leontyne do price value prices mary monetary</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>392</number>
+    <text> robotics</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>393</number>
+    <text> putting obliterate cleanup death mercifulness killing vote to bolt violent belt mercy down kill stamp drink pour out sidesplitting</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>394</number>
+    <text> household civilise house rest plate dwelling family base home schooling civilize nursing menage</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>395</number>
+    <text> touristry tourism</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>396</number>
+    <text> of be syndrome ramp ghastly vomit sickish tired upchuck grisly fed work construction sick regorge throw up brainsick macabre gruesome demented edifice building</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>397</number>
+    <text> call recollect callback back auto hark remember recall motorcar recalls car automobile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>398</number>
+    <text> disassembly tear disassemble arsenal raze european dismantlement union rase europe eec community take dismantling pull apart market common europes down break ec dismantle economic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>399</number>
+    <text> vessel oceanographic vessels vas</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>400</number>
+    <text> woods amazon rain rainwater river timberland forest afforest down pelting rainfall woodland</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>401</number>
+    <text> foreign republic nonage federal minorities deutschland of germany frg minority</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>402</number>
+    <text> genetics science behavioural genetic behavioral</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>403</number>
+    <text> osteoporosis</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>404</number>
+    <text> let of emerald the negotiation republic spill beans public verbalise talk peace security isle bag town mind cat hibernia treaty speak eire talking ataraxis babble out talks blab lecture ireland verbalize irish</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>405</number>
+    <text> cosmic effect event consequence upshot events result</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>406</number>
+    <text> c james parkinsons northcote parkinson cyril disease</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>407</number>
+    <text> conserve uphold poaching preserves preserve conserves wildlife poach</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>408</number>
+    <text> storm tropical storms tempest violent</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>409</number>
+    <text> artium of tear personify amplitude god atomic off 103 exist genus pan cooking number legal constitute modulation apart up magister goat make am arts americium 95 master</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>410</number>
+    <text> agreement accord schengen arrangement</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>411</number>
+    <text> hold dear wealth shipwreck gem hoarded salvaging cherish treasure</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>412</number>
+    <text> airdrome department airport aerodrome measures measure certificate security drome</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>413</number>
+    <text> sword production steel</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>414</number>
+    <text> boodle of carbohydrate lettuce pelf gelt export cuba exportation sugar clams dinero lucre saccharify moolah wampum exports republic saccharide lolly shekels kale simoleons refined</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>415</number>
+    <text> golden trigon drugs drug triangulum do triangle trilateral</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>416</number>
+    <text> gorge terzetto 3 contrive overindulge externalize gormandise oesophagus triad ingurgitate out ternion gormandize deuceace visualize trine envision trinity scarf undertaking trio stick englut tercet externalise task engorge gorges threesome pig gullet jut esophagus protrude overgorge ternary project three trey overeat defile triplet gourmandize iii</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>417</number>
+    <text> creative creativity creativeness thinking</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>418</number>
+    <text> quilt quilts income</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>419</number>
+    <text> play upon reuse fag wear auto tire recycle tires down motorcar weary reprocess car out automobile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>420</number>
+    <text> monoxide number toxic poisoning 6 copy intoxication atomic paper condition carbon</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>421</number>
+    <text> languish to thriftlessness barren wasteland in lay knock matter disposal godforsaken permissive off industrial pine away waste pig administration squander neutralise liquidate devastate garbage product material electric emaciate do wastefulness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>422</number>
+    <text> art invent matter artwork creation artistic fine graphics stolen prowess excogitate forged production artistry nontextual</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>423</number>
+    <text> mirjana markovic milosevic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>424</number>
+    <text> suicides felodese selfannihilation suicide selfdestruction</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>425</number>
+    <text> money counterfeiting</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>426</number>
+    <text> philosophy of nature constabulary wienerwurst weenie bounder domestic cad give andiron jurisprudence dog law legal frump detent blackguard chase dogs force police firedog frankfurter dogiron go enforcement natural familiaris pawl practice after canis</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>427</number>
+    <text> eye radiation middle equipment damage injury oculus casualty scathe impairment illumination center uv ultraviolet light optic eyes legal</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>428</number>
+    <text> per tell birthing give unit on rates charge parturition nativity turn pass worsen up nascency nascence down declining giving birth rate</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>429</number>
+    <text> legionnaires legionary disease legionnaire</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>430</number>
+    <text> assail of approach grampus on sea wolf attack orca bee plan whale aggress out set killer death tonebeginning cause orcinus attacks lash onrush</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>431</number>
+    <text> machinelike technology science engineering automatonlike robotic applied robotlike</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>432</number>
+    <text> motorists force automobilist constabulary motorist profiling police</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>433</number>
+    <text> philosophy hellene doctrine thought greek system language philosophical stoicism stolidness ism of hellenic school</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>434</number>
+    <text> republic saving economy thriftiness estonia of economic system esthonia</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>435</number>
+    <text> ontogeny population ontogenesis growth conquer growing kerb curbing down suppress stamp emergence curb increment curtail restrict inhibit maturation</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>436</number>
+    <text> track accident event chance system line railroad railway accidents fortuity</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>437</number>
+    <text> accelerator deregulation petrol shoot a deregulating gasolene pedal state gaseous car electric gasoline line gas flatulence flatulency natural automobile</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>438</number>
+    <text> stepup increment gain tourism touristry increase</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>439</number>
+    <text> invention inventions discovery innovation discoveries find scientific breakthrough</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>440</number>
+    <text> parturiency of labour working task travail proletariat minor project union tiddler trade lyingin labor department party kid british movement class undertaking youngster confinement childbed toil child moil nipper</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>441</number>
+    <text> lyme disease</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>442</number>
+    <text> acts human of behave the act roleplay playact apostles action activity heroical meter verse largerthanlife heroic</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>443</number>
+    <text> of africa usa funds uracil u usa atomic investment us states uranium the number investing united america 92</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>444</number>
+    <text> fluid fluids supercritical</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>445</number>
+    <text> woman clergy cleaning fair adult charwoman lady female women sex</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>446</number>
+    <text> tourer ferocity tourists violence vehemence holidaymaker tourist fierceness furiousness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>447</number>
+    <text> locomotive railway engine stirling</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>448</number>
+    <text> ship losings casualty personnel ink losses embark red loss</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>449</number>
+    <text> ineffectuality antibiotic drug antibiotics ineffectualness ineffectiveness</text>
+  </query>
+  <query>
+    <type>indri</type>
+    <number>450</number>
+    <text> of public rex jr worldbeater bin attakriti talal leader husain riley peace monarch husayn magnate executive moffitt businessman king big ataraxis security saddam martin top b tycoon jean business treaty hussein luther mind male ibn b billie</text>
+  </query>
+</parameters>
