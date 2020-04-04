@@ -9,7 +9,6 @@ def normalize(string1):
 
 
 def remove_punctuation(str_in, punctuation_list):
-    punctuation_list.remove('-')
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
@@ -36,6 +35,7 @@ def query_maker(mode_option):
     number = 301
     result = basic_structure
     punct_list = set(string.punctuation)
+    punct_list.remove('-')
     for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc'), topics_root.iter('narr')):
 
         # got to take the 'Description: ' off the text

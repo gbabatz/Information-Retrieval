@@ -6,7 +6,6 @@ from nltk.corpus import wordnet as wn
 
 
 def remove_punctuation(str_in, punctuation_list):
-
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
@@ -106,6 +105,7 @@ et.SubElement(root, 'count').text = '1000'
 et.SubElement(root, 'trecFormat').text = 'true'
 
 punct_list = set(string.punctuation)
+punct_list.remove('-')
 for query_text in query_parse_root.iter('text'):
 
     query = et.SubElement(root, 'query')
