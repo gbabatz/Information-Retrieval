@@ -1,6 +1,6 @@
 import xml.etree.ElementTree as et
 import string
-# import nltk
+import nltk
 # nltk.download()
 from nltk.corpus import wordnet as wn
 
@@ -56,7 +56,7 @@ def find_word_synonyms(word):
             # we take the first synset of the given lemma name to compare with
             lemma_syn = wn.synsets(lemma)[0]
             score = syn_set.wup_similarity(lemma_syn)
-            if score is not None and score > 0.75:
+            if score is not None and score > 0.95:
                 syns = syns + ' ' + lemma
     return syns
 
@@ -84,13 +84,20 @@ def enhance_text(text):
     return final_text
 
 
-query_parse_tree = et.parse('title_queries.xml')
+basic_query_paths = ['/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles.xml','/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles_desc.xml','/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles_desc_narr.xml']
+
+print("ENHANCE:\n0: Titles only 1: Titles and Descriptions 2: Titles, Descriptions and Narratives ")
+mode_option = 10  # random number
+while mode_option < 0 or mode_option > 2:
+    mode_option = int(input("Enter value: 0,1 or 2 "))
+
+query_parse_tree = et.parse(basic_query_paths[mode_option])
 query_parse_root = query_parse_tree.getroot()
 
 number = 301
 
-root = et.Element('paremeters')
-et.SubElement(root, 'index').text = '/home/gbabatz/workspace/Information_retrieval/project1/IR-2019-2020-Project-1/indices/index1'
+root = et.Element('parameters')
+et.SubElement(root, 'index').text = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1'
 et.SubElement(root, 'rule').text = 'method:dirichlet,mu:1000'
 et.SubElement(root, 'count').text = '1000'
 et.SubElement(root, 'trecFormat').text = 'true'
@@ -110,4 +117,7 @@ for query_text in query_parse_root.iter('text'):
 
 indent(root)
 tree = et.ElementTree(root)
-tree.write('queries_titles_enhanced_wordnetupdated.xml')
+output_files = ['titles_wordnet_0.95.xml','titles_desc_wordnet.xml','titles_desc_narr_wordnet.xml']
+file_title = output_files[mode_option]
+
+tree.write(file_title)
