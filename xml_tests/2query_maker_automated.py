@@ -16,6 +16,7 @@ def remove_punctuation(str_in, punctuation_list):
 
 
 def query_maker(mode_option):
+    base_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/'
     mode_option = int(mode_option)
     index_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1'
     basic_structure = '<parameters>\n' \
@@ -25,7 +26,9 @@ def query_maker(mode_option):
 
     # loop from here
     # parse the topics
-    topics_tree = et.parse('../topics_all_reformated_readable.xml')
+    topics_file_name = 'topics_all_reformated_readable.xml'
+    full_topics_path = base_path + topics_file_name
+    topics_tree = et.parse(full_topics_path)
     topics_root = topics_tree.getroot()
 
     modes = ['titles', 'titles_desc', 'titles_desc_narr']
@@ -64,7 +67,7 @@ def query_maker(mode_option):
     # for example when I need only titles however the application is low cost
     # and it looks cleaner like this
 
-    file_title = '../basic_queries_' + modes[mode_option] + '.xml'
+    file_title = base_path + 'basic_queries_' + modes[mode_option] + '.xml'
     with open(file_title, 'w') as f:
         f.write(result)
 
