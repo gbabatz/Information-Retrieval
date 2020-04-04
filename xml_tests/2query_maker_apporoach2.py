@@ -2,6 +2,13 @@ import xml.etree.ElementTree as et
 import string
 
 
+def normalize(string1):
+    string1 = string1.replace('_', ' ')
+    string1 = string1.replace('-', ' ')
+    string1 = string1.replace('/', ' ')
+    return string1
+
+
 def remove_punctuation(str_in, punctuation_list):
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
@@ -36,13 +43,19 @@ for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc')
     narr.text = narr.text[12:]
 
     if mode_option == 0:
-        text = remove_punctuation(title.text,punct_list)
+        query_txt = title.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
     elif mode_option == 1:
-        text = remove_punctuation(title.text + desc.text, punct_list)
+        query_txt = title.text + desc.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
     elif mode_option == 2:
-        text = remove_punctuation(title.text + desc.text + narr.text, punct_list)
+        query_txt = title.text + desc.text + narr.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
 
-    query_structure = '  <query> <type>indri</type><number>' + str(number) + '</number><text> ' + text + ' </text></query>\n'
+    query_structure = '  <query> <type>indri</type><number>' + str(number) + '</number><text> ' + query_txt + ' </text></query>\n'
     number += 1
     result = result + query_structure
 

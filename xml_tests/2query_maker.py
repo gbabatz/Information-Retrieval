@@ -1,6 +1,7 @@
 import xml.etree.ElementTree as et
 import string
 
+
 def indent(elem, level=0):
     i = "\n" + level * "  "
     if len(elem):
@@ -21,6 +22,13 @@ def remove_punctuation(str_in, punctuation_list):
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
+
+
+def normalize(string1):
+    string1 = string1.replace('_', ' ')
+    string1 = string1.replace('-', ' ')
+    string1 = string1.replace('/', ' ')
+    return string1
 
 
 # creating the xml format
@@ -58,13 +66,19 @@ for title, desc, narr in zip(topics_root.iter('title'), topics_root.iter('desc')
     narr.text = narr.text[12:]
 
     if mode_option == 0:
-        query_txt = remove_punctuation(title.text,punct_list)
+        query_txt = title.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
         et.SubElement(query, 'text').text = query_txt
     elif mode_option == 1:
-        query_txt = remove_punctuation(title.text + desc.text, punct_list)
+        query_txt = title.text + desc.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
         et.SubElement(query, 'text').text = query_txt
     elif mode_option == 2:
-        query_txt = remove_punctuation(title.text + desc.text + narr.text, punct_list)
+        query_txt = title.text + desc.text + narr.text
+        query_txt = normalize(query_txt)
+        query_txt = remove_punctuation(query_txt, punct_list)
         et.SubElement(query, 'text').text = query_txt
 
 # yes it processes all even though some data may not need to be processed

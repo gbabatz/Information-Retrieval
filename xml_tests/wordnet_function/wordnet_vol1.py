@@ -6,6 +6,7 @@ from nltk.corpus import wordnet as wn
 
 
 def remove_punctuation(str_in, punctuation_list):
+
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
@@ -17,8 +18,9 @@ def remove_doubles(x):
 
 def normalize(string):
     string = string.lower()
-    if '_' in string:
-        string = string.replace('_', ' ')
+    string = string.replace('_', ' ')
+    string = string.replace('-', ' ')
+    string = string.replace('/', ' ')
     return string
 
 
