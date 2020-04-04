@@ -27,9 +27,7 @@ for synset in syns:
         print('    synset of lemma {} is: {}'.format(name, newsynset))
 
 
-
-
-synsetfortest =wordnet.synsets('criminal_offence')[0]
+synsetfortest = wordnet.synsets('offense')[0]
 print(synsetfortest)
 score = syns[0].wup_similarity(synsetfortest)
 print(score)

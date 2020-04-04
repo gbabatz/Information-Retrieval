@@ -4,12 +4,12 @@ import string
 
 def normalize(string1):
     string1 = string1.replace('_', ' ')
-    string1 = string1.replace('-', ' ')
     string1 = string1.replace('/', ' ')
     return string1
 
 
 def remove_punctuation(str_in, punctuation_list):
+    punctuation_list.remove('-')
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct

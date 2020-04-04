@@ -1,4 +1,5 @@
-topics_str = open('../topics.301-450.trec').read()
+base_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/'
+topics_str = open(base_path + 'topics.301-450.trec').read()
 
 
 # takes as input a string parameter and returns a list
@@ -81,7 +82,7 @@ result.append('</topics>')
 new_topics_str = ' '.join(result)
 # print(newstr)
 
-with open('../topics_all_reformated.xml', 'w') as newfile:
+with open(base_path + 'topics_all_reformated.xml', 'w') as newfile:
     newfile.write(new_topics_str)
 
 
@@ -89,10 +90,10 @@ with open('../topics_all_reformated.xml', 'w') as newfile:
 import xml.etree.ElementTree as et
 
 # standar way of opening xml files
-tree = et.parse('../topics_all_reformated.xml')
+tree = et.parse(base_path + 'topics_all_reformated.xml')
 root = tree.getroot()
 
 # readable with the indent function I found online :D
 indent(root)
 newtree = et.ElementTree(root)
-newtree.write('../topics_all_reformated_readable.xml')
+newtree.write(base_path + 'topics_all_reformated_readable.xml')

@@ -4,12 +4,12 @@ import string
 
 def normalize(string1):
     string1 = string1.replace('_', ' ')
-    string1 = string1.replace('-', ' ')
     string1 = string1.replace('/', ' ')
     return string1
 
 
 def remove_punctuation(str_in, punctuation_list):
+    punctuation_list.remove('-')
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
@@ -22,7 +22,9 @@ basic_structure = '<parameters>\n' \
 
 # loop from here
 # parse the topics
-topics_tree = et.parse('../topics_all_reformated_readable.xml')
+base_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/'
+topics_file_name = 'topics_all_reformated_readable.xml'
+topics_tree = et.parse(base_path + topics_file_name)
 topics_root = topics_tree.getroot()
 
 modes = ['titles', 'titles_desc', 'titles_desc_narr']
@@ -65,6 +67,6 @@ result = result + '</parameters>'
 # for example when I need only titles however the application is low cost
 # and it looks cleaner like this
 
-file_title = '../basic_queries_' + modes[mode_option] + '_approach2.xml'
+file_title = base_path + 'basic_queries_' + modes[mode_option] + '.xml'
 with open(file_title, 'w') as f:
     f.write(result)

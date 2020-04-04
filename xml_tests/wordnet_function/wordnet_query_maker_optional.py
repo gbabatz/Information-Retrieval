@@ -6,6 +6,7 @@ from nltk.corpus import wordnet as wn
 
 
 def remove_punctuation(str_in, punctuation_list):
+
     char_list_without_punct = [char for char in str_in if char not in punctuation_list]
     text_without_punct = ''.join(char_list_without_punct)
     return text_without_punct
@@ -40,7 +41,7 @@ def indent(elem, level=0):
 
 
 # takes as input a string word and
-# returns an enhances string
+# returns an enhanced string
 def find_word_synonyms(word):
     syn_sets = wn.synsets(word)
 
@@ -85,52 +86,41 @@ def enhance_text(text):
     return final_text
 
 
-def wordnet(mode_option):
-    mode_option = int(mode_option)
+base_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/'
+basic_query_paths = ['basic_queries_titles.xml', 'basic_queries_titles_desc.xml', 'basic_queries_titles_desc_narr.xml']
 
-    basic_query_paths = ['/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles.xml','/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles_desc.xml','/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/basic_queries_titles_desc_narr.xml']
+print("ENHANCE:\n0: Titles only 1: Titles and Descriptions 2: Titles, Descriptions and Narratives ")
+mode_option = 10  # random number
+while mode_option < 0 or mode_option > 2:
+    mode_option = int(input("Enter value: 0,1 or 2 "))
 
-    # print("ENHANCE:\n0: Titles only 1: Titles and Descriptions 2: Titles, Descriptions and Narratives ")
-    # mode_option = 10  # random number
-    # while mode_option < 0 or mode_option > 2:
-    #     mode_option = int(input("Enter value: 0,1 or 2 "))
+query_parse_tree = et.parse(base_path + basic_query_paths[mode_option])
+query_parse_root = query_parse_tree.getroot()
 
-    query_parse_tree = et.parse(basic_query_paths[mode_option])
-    query_parse_root = query_parse_tree.getroot()
+number = 301
 
-    number = 301
+root = et.Element('parameters')
+et.SubElement(root, 'index').text = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1'
+et.SubElement(root, 'rule').text = 'method:dirichlet,mu:1000'
+et.SubElement(root, 'count').text = '1000'
+et.SubElement(root, 'trecFormat').text = 'true'
 
-    root = et.Element('parameters')
-    et.SubElement(root, 'index').text = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/indices/index1'
-    et.SubElement(root, 'rule').text = 'method:dirichlet,mu:1000'
-    et.SubElement(root, 'count').text = '1000'
-    et.SubElement(root, 'trecFormat').text = 'true'
+punct_list = set(string.punctuation)
+for query_text in query_parse_root.iter('text'):
 
-    punct_list = set(string.punctuation)
-    for query_text in query_parse_root.iter('text'):
+    query = et.SubElement(root, 'query')
+    et.SubElement(query, 'type').text = 'indri'
+    et.SubElement(query, 'number').text = str(number)
+    number += 1
 
-        query = et.SubElement(root, 'query')
-        et.SubElement(query, 'type').text = 'indri'
-        et.SubElement(query, 'number').text = str(number)
-        number += 1
-
-        enhanced_query = enhance_text(query_text.text)
-        enhanced_query = remove_punctuation(enhanced_query, punct_list)
-        et.SubElement(query, 'text').text = enhanced_query
-
-    indent(root)
-    tree = et.ElementTree(root)
-    output_files = ['titles_wordnet.xml', 'titles_desc_wordnet.xml', 'titles_desc_narr_wordnet.xml']
-    base_path = '/home/gbabatz/workspace/IR/IR-2019-2020-Project-1/'
-    file_title = base_path + output_files[mode_option]
-
-    tree.write(file_title)
+    enhanced_query = enhance_text(query_text.text)
+    enhanced_query = remove_punctuation(enhanced_query, punct_list)
+    et.SubElement(query, 'text').text = enhanced_query
 
 
-def main():
-    for mode in [0, 1, 2]:
-        wordnet(mode)
+indent(root)
+tree = et.ElementTree(root)
+output_files = ['wordnet_titles.xml', 'wordnet_titles_desc.xml', 'wordnet_titles_desc_narr.xml']
+file_title = base_path + output_files[mode_option]
 
-
-main()
-
+tree.write(file_title)
