@@ -38,7 +38,7 @@ et.SubElement(stemmer, 'name').text = 'Krovetz'
 
 indent(root)
 tree = et.ElementTree(root)
-tree.write('../parameter_file.parameter')
+tree.write(abs_path + 'parameter_file.parameter')
 
 #print('done')
 
