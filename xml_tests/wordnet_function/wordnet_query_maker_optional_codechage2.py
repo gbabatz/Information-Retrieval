@@ -121,6 +121,6 @@ for query_text in query_parse_root.iter('text'):
 indent(root)
 tree = et.ElementTree(root)
 output_files = ['wordnet_titles.xml', 'wordnet_titles_desc.xml', 'wordnet_titles_desc_narr.xml']
-file_title = base_path + + 'max2synsets_' + output_files[mode_option]
+file_title = base_path + 'max2synsets_' + output_files[mode_option]
 
 tree.write(file_title)
